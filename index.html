@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <!-- Tailwind css file -->
+    <link href="./output.css" rel="stylesheet" />
+
+    <!-- Font Epilogue -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Intro</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body class="h-[1000px] overflow-scroll">
+    <!-- header -->
+    <header
+      class="sticky top-0 flex flex-row justify-between items-center px-4 py-6 bg-white"
+    >
+      <a href="#">
+        <img alt="snap" src="./images/logo.svg" class="" />
+      </a>
+
+      <!-- TODO: Make popup -->
+      <nav class="">
+        <button>
+          <img alt="Popup" src="./images/icon-menu.svg" />
+        </button>
+
+        <ul class="hidden">
+          <li>Features</li>
+          <li>Company</li>
+          <li>Login ... etc</li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- main -->
+    <main
+      class="flex flex-col gap-12 justify-center items-center text-center large:flex-row-reverse large:p-16 large:max-h-[screen]"
+    >
+      <!-- Image Hero / card one -->
+      <img
+        src="./images/image-hero-mobile.png"
+        alt="Graphic"
+        class="w-full object-cover object-top large:hidden"
+      />
+      <img
+        src="./images/image-hero-desktop.png"
+        alt="Graphic"
+        class="w-full hidden large:block"
+      />
+
+      <!-- Card two  -->
+      <div class="flex flex-col gap-8">
+        <!-- Text -->
+        <div class="px-4 flex flex-col gap-6">
+          <h1 class="text-4xl font-bold">Make remote Work</h1>
+          <p class="text-gray">
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+
+          <div class="flex items-center justify-center">
+            <a
+              href="#"
+              class="bg-black py-3 px-6 text-white rounded-xl inline-block"
+              >Learn more
+            </a>
+          </div>
+        </div>
+
+        <!-- Testimonials-->
+        <div
+          class="flex flex-row w-full items-center justify-between gap-4 px-4"
+        >
+          <a href="#" class="w-full flex items-center justify-center h-4">
+            <img
+              src="./images/client-databiz.svg"
+              alt="logo"
+              class="object-contain h-6"
+            />
+          </a>
+          <a href="#" class="w-full flex items-center justify-center">
+            <img
+              src="./images/client-audiophile.svg"
+              alt="logo"
+              class="object-contain h-6"
+            />
+          </a>
+          <a href="#" class="w-full flex items-center justify-center">
+            <img
+              src="./images/client-meet.svg"
+              alt="logo"
+              class="object-contain h-6"
+            />
+          </a>
+          <a href="#" class="w-full flex items-center justify-center">
+            <img
+              src="./images/client-maker.svg"
+              alt="logo"
+              class="object-contain h-6"
+            />
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <!-- Default text -- DELETE ME LATER-->
+    <div class="hidden">
+      Features Company Careers About Login Register Make remote work Get your
+      team in sync, no matter your location. Streamline processes, create team
+      rituals, and watch productivity soar. Learn more
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/BrianHammer">Brian Hammer</a>.
+    </div>
+  </body>
+</html>
